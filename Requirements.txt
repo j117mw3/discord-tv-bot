@@ -1,0 +1,4 @@
+discord.py==2.4.0
+python-vlc==3.0.18121
+yt-dlp==2025.3.31
+aiohttp==3.9.5
