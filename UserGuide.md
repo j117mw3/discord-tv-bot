@@ -1,12 +1,26 @@
 # Discord TV Bot - User Guide
 
-Quick reference for using the TV Remote Bot in Discord.
+This guide explains how to use the remote control interface to manage your media broadcasts.
 
 ---
 
-## Control Panel
+## 🚀 The Essential Workflow (Read This First!)
 
-The bot posts a persistent control panel at the bottom of your designated TV channel. It updates in real-time as you interact with it.
+The Bot is a **remote control**, not a video streamer. To start a "Watch Party," you must follow these steps in order:
+
+1.  **Launch the Bot:** Run the bot on your host computer (`python bot.py`).
+2.  **Open Discord on the Host:** Log into Discord on the **same computer** that is playing VLC.
+3.  **Start the Stream:** 
+    *   Join a Voice Channel in your server.
+    *   Click the **"Share Your Screen"** button.
+    *   DO NOT Select the **VLC Media Player window**, Instead **Choose your Main Screen**.
+4.  **Connect as a Viewer:** Open Discord on your phone or another device, join that same Voice Channel, and you can now use the Bot's buttons to control the show!
+
+---
+
+## 🎮 Control Panel Features
+
+The bot posts a persistent control panel at the bottom of your designated TV channel.
 
 ### Panel Display Shows:
 - 📺 Current show/stream name
@@ -34,7 +48,7 @@ The bot posts a persistent control panel at the bottom of your designated TV cha
 
 ## Shows & Streams Menu
 
-Click the dropdown menu to access all features:
+The dropdown menu is your command center. Use it to access:
 
 ### 📺 Browse Shows
 Opens the full show library browser
@@ -53,6 +67,7 @@ Manage your watch queue
 Browse live streams by category
 - Requires `Streams.json` configuration
 - Supports M3U8 and direct video URLs
+  *   **YouTube:** Paste a YouTube URL into the popup. The bot will use `yt-dlp` to resolve it and start playing immediately on the Host PC.
 - Seek/skip controls disabled for streams
 
 ### 🔀 Shuffle Mode
