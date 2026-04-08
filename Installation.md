@@ -36,6 +36,12 @@ Open Command Prompt or PowerShell and run:
 ```cmd
 python -m pip install -U "yt-dlp[default]"
 ```
+Depending on what browser you have, run the following:
+```cmd
+py -3.11 -m yt_dlp --cookies-from-browser edge --cookies cookies.txt
+
+py -3.11 -m yt_dlp --cookies-from-browser chrome --cookies cookies.txt
+```
 
 ### 5. Install Python Dependencies
 
