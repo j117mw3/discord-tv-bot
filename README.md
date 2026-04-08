@@ -43,9 +43,10 @@ To use this project, you are managing two separate things:
 2.  **Prepare your Media:** Organize shows in `C:\Shows` (Windows) or your configured path.
 3.  **Start the Broadcast:**
     *   Open Discord on the **Host PC**.
+    *   Enter a Voice Channel and click **"Share Your Screen"** $\rightarrow$ Select Share Screen.
     *   Run `python bot.py`.
-    /Enter a Voice Channel and click **"Share Your Screen"** $\rightarrow$ Select the VLC Window.
-4.  **Control:** Join the server from your phone or another device and use the Control Panel!
+    
+5.  **Control:** Join the server from your phone or another device and use the Control Panel!
 
 ---
 
