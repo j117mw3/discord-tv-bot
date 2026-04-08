@@ -1,61 +1,51 @@
 # Discord TV Remote Bot 📺
 
-A powerful Discord bot that transforms VLC Media Player into a remote‑controlled streaming hub. Browse your media library, manage watch queues, and control playback—all from Discord.
+A powerful remote-control system that transforms any computer with VLC Media Player into a Discord-accessible streaming hub. 
 
-> **⚠️ Important** – This bot must run on a device that stays **on 24/7** (e.g., a mini PC, an old laptop, a Raspberry Pi, or a cloud VM). It does **not** stream your personal Discord screen; instead, it runs VLC directly on that device and lets you remote‑control it via Discord.
-
----
-
-## Features
-
-- 🎬 **Show Browser** – Navigate your entire TV show library with pagination  
-- 📑 **Watch Queue** – Queue up episodes and let them auto‑play  
-- 🔀 **Shuffle Modes** – Random episodes or random shows  
-- 📡 **Live Streams** – Support for M3U8 and other streaming formats  
-- 📜 **Watch History** – Track what you’ve watched with timestamps  
-- 💡 **Suggestion Box** – Community voting on new shows to add  
-- 🎮 **Full Remote Control** – Play, pause, seek, skip, volume control  
-- 🖥️ **Fullscreen Management** – Auto‑fullscreen with focus fixes  
+> **⚠️ IMPORTANT CONCEPT:** This bot does **not** stream video directly through Discord's servers. It controls a local instance of VLC on your **Host PC**. To let others watch, you must manually start a "Screen Share" in a Discord Voice Channel from the same computer running the bot.
 
 ---
 
-## What You Need
+## 🌟 Core Concept: The Two-Part Setup
 
-### 1. A device that runs 24/7  
-The bot must always be online to respond to commands. Good options:  
-- A mini PC (e.g., Intel NUC, Beelink)  
-- An old laptop or desktop you leave on  
-- A Raspberry Pi 4/5  
-- A cloud VM (AWS EC2, Google Cloud, DigitalOcean, etc.)  
+To use this project, you are managing two separate things:
 
-### 2. Two Discord accounts  
-- **Your personal Discord account** – the one you use to send commands.  
-- **A separate bot account** – created at the [Discord Developer Portal](https://discord.com/developers/applications). This account will run the bot and appear in your server.  
-
-> The bot itself **cannot** stream your screen. It runs VLC on the 24/7 device and plays media locally. You use Discord buttons to control playback remotely.
-
-### 3. Media files or streams  
-- TV shows stored on the 24/7 device (or a network drive it can access).  
-- (Optional) Live stream URLs in a `Streams.json` file.
+1.  **The Host (The TV):** A PC/Server running the Bot, VLC Media Player, and an active Discord Screen Share in a Voice Channel.
+2.  **The Controller (The Remote):** Any device (Phone, Tablet, Second Monitor) where you join the same Discord server to interact with the Bot's buttons and menus.
 
 ---
 
-## Quick Start
+## ✨ Features
 
-### Prerequisites (on your 24/7 device)
-- Windows or Linux  
-- Python 3.9+  
-- VLC Media Player  
-- Discord Bot Token (from Developer Portal)
+*   🎬 **Show Browser** – Navigate your local library with pagination and season support.
+*   📑 **Watch Queue** – Add episodes to a queue; the bot auto-plays them when the current one ends.
+*   📡 **Live & YouTube Streams** – Paste a YouTube link or M3U8 URL via Discord, and the Host PC will instantly begin playing it.
+*   🔄 **On-the-Fly Streaming** – Use `Streams.json` to manage permanent live stream categories (News, Lofi, etc.).
+*   📜 **Watch History** – Track what has been played, by whom, and when.
+*   💡 **Suggestion Box** – Let your community vote on which shows you should add to the library next.
+*   🎮 **Full Remote Control** – Play/Pause, Seek (15s), Volume, Skip, and Shuffle modes—all via Discord buttons.
+*   🖥️ **Fullscreen Management** – One-click "Fullscreen Fix" to force VLC back to the front of your screen.
 
-### Step‑by‑Step
+---
 
-1. **Clone or download this repository**  
-2. **Install dependencies** – see the [full installation guide](https://github.com/j117mw3/discord-tv-bot/blob/main/Installation.md)  
-3. **Set your bot token** – as environment variable `TV_BOT_TOKEN`  
-4. **Edit `core.py`** – add your Discord channel ID and server ID  
-5. **Create your shows folder** (e.g., `C:\Shows` or `~/Shows`)  
-6. **Run the bot** – `python bot.py`
+## 🛠️ Prerequisites
+
+*   **A 24/7 Device:** A PC, Raspberry Pi, or Cloud VM that stays on.
+*   **VLC Media Player (64-bit):** Must be installed on the Host PC.
+*   **Python 3.9+** and **yt-dlp** (for YouTube support).
+*   **Discord Bot Token:** Created via the [Discord Developer Portal](https://discord.com/developers/applications).
+
+---
+
+## 🚀 Quick Start
+
+1.  **Setup the Bot:** Follow the [Installation Guide](Installation.md).
+2.  **Prepare your Media:** Organize shows in `C:\Shows` (Windows) or your configured path.
+3.  **Start the Broadcast:**
+    *   Open Discord on the **Host PC**.
+    *   Run `python bot.py`.
+    /Enter a Voice Channel and click **"Share Your Screen"** $\rightarrow$ Select the VLC Window.
+4.  **Control:** Join the server from your phone or another device and use the Control Panel!
 
 ---
 
