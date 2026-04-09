@@ -34,7 +34,11 @@ Close and reopen PowerShell after installation.
 
 Open Command Prompt or PowerShell and run:
 ```cmd
-python -m pip install -U "yt-dlp[default]"
+py -3.11 -m pip install -U "yt-dlp[default]"
+```
+Then
+```cmd
+py -3.11 -m pip install "git+https://github.com/seproDev/yt-dlp-ChromeCookieUnlock.git"
 ```
 Depending on what browser you have, run the following:
 ```cmd
