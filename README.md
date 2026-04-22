@@ -99,7 +99,7 @@ Supported formats: `.mp4`, `.mkv`, `.avi`, `.mov`, `.m4v`, `.wmv`, `.flv`, `.web
 | “BOT_TOKEN is empty” | Set `TV_BOT_TOKEN` environment variable and restart terminal |
 | Fullscreen not working | Use the “Fullscreen Fix” in the Shows menu |
 
-See [INSTALLATION.md](./Installation.md) for detailed troubleshooting.
+See [INSTALLATION.md](./installation.md) for detailed troubleshooting.
 
 ---
 
