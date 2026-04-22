@@ -39,7 +39,7 @@ To use this project, you are managing two separate things:
 
 ## 🚀 Quick Start
 
-1.  **Setup the Bot:** Follow the [Installation Guide](Installation.md).
+1.  **Setup the Bot:** Follow the [Installation Guide]([Installation.md](https://github.com/j117mw3/discord-tv-bot/blob/main/Installation.md)).
 2.  **Prepare your Media:** Organize shows in `C:\Shows` (Windows) or your configured path.
 3.  **Start the Broadcast:**
     *   Open Discord on the **Host PC**.
